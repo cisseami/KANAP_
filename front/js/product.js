@@ -1,9 +1,6 @@
 const querySting = window.location.search
 const urlParams = new URLSearchParams(querySting)
 const id = urlParams.get("id")
-console.log({ id })
-
-//let cart = localStorage
 
 
 fetch(`http://localhost:3000/api/products/${id}`)
@@ -16,9 +13,14 @@ fetch(`http://localhost:3000/api/products/${id}`)
 // Fonction Principale
 
 function addSofa(sofa){
-    console.log(sofa)
+   
+    const imageUrl = sofa.imageUrl 
+    const altTxt = sofa.altTxt
+    const name = sofa.name
+    const description = sofa.description
+    const colors = sofa.colors
+    const price = sofa.price
 
-    const { altTxt, colors, description, imageUrl, name, price } = sofa
     
     addImage(imageUrl, altTxt)
     addTitle(name)

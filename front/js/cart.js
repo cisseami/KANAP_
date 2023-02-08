@@ -315,7 +315,7 @@ function formData(){
 
 // recuperation des donnes du produits pour les envoyer a la base de donne 
 
-function productData(item) {
+function productData() {
     const numberOfProducts = localStorage.length
     const ids = []
     for (let i = 0 ; i< numberOfProducts; i++) {

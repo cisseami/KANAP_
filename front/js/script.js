@@ -4,11 +4,8 @@ const url = 'http://localhost:3000/api/products'
 // Appel API
 
 fetch(url)
-  .then(response => response.json())
-  .then(data => {
-    console.log(data) 
-      addSofa(data)
-  })
+  .then((response) => response.json())
+  .then((data)=> addSofa(data))
   
 // Fonction Principale avec toutes les fonctions inclus
 
