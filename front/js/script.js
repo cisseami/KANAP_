@@ -37,7 +37,7 @@ function addSofa(data) {
 
 }
 
-// selection du ID et ajoute dans le DOM
+// selection du ID dans le Dom et ajoute des elements dans le DOM
 
 function addItems(link, article) {
   const items = document.querySelector("#items")
@@ -48,7 +48,7 @@ function addItems(link, article) {
 }
 
 
-// lien a href
+// lien a href vers la page produit
 
 function addLink(_id) {
   const link = document.createElement("a")

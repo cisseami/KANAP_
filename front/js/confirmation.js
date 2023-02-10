@@ -10,7 +10,7 @@ function getOrderId(){
     return orderId
 }
 
-function postOrderId(){
+function postOrderId(orderId){
     const orderIdElement = document.querySelector("#orderId")
     orderIdElement.textContent = orderId
 }
